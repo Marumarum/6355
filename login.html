@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="webico.ico" />
+    <title>Loginpocketbook</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+<body>
+    <div class="container">
+        <img src="bg.jpeg" />
+        <div class="panel">
+            <div class="content ">
+                <div class="switch">
+                    <span class="login">Login</span>
+                    <span>/</span>
+                    <span class="signup">Sign up</span>
+                </div>
+                <div class='form'>
+
+
+                    <div class="input"><input type="text" name="email" id='email'><label for="email">Email</label>
+                    </div>
+                    <div class="input"><input type="text" name="Username" id="username"><label
+                            for="username">Username</label></div>
+                    <div class="input"><input type="password" name="Password" id="Password"><label
+                            for="Password">Password</label></div>
+                    <div class="input"><input type="password" name="repeat" id="Passwordrepeat" /><label
+                            for="Passwordrepeat">Repeat Password</label></div>
+
+
+                    <span>Forget?</span>
+
+                    <button type="submit">LOGIN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(function () {
+        $(".login").on('click', function () {
+            $('[for=email]').hide();
+            $('#email').hide();
+            $('[for=Passwordrepeat]').hide();
+            $('#Passwordrepeat').hide();
+            $(this).addClass('active');
+            $('.signup').removeClass('active')
+
+        })
+        $(".signup").on('click', function () {
+            $('[for=email]').show();
+            $('#email').show();
+            $('[for=Passwordrepeat]').show();
+            $('#Passwordrepeat').show();
+            $(this).addClass('active');
+            $('.login').removeClass('active')
+
+        })
+    })
+</script>
+
+</html>

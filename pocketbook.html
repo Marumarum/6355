@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="webico.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="pocketbook.css">
+    <script src="https://kit.fontawesome.com/2c7d3acd09.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <title>Pocket Book</title>
+
+<body>
+
+
+    <header>
+        <h1>Pocket</h1>
+        <p>pocket book icon</p>
+        <h1>Book</h1>
+    </header>
+    <div class='container'>
+
+
+        <div class='container'>
+            <div class="row row-cols-3">
+                <div class="form-check col">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                        value="option1">
+                    <i class="fas fa-book"></i>
+                    <label class="form-check-label">
+                        Books
+                    </label>
+                </div>
+                <div class="form-check col">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option2">
+                    <i class="fas fa-hamburger"></i>
+                    <label class="form-check-label" for="exampleRadios2">
+                        Food
+                    </label>
+                </div>
+                <div class="form-check col">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option3">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <label class="form-check-label" for="exampleRadios2">
+                        Recreation
+                    </label>
+                </div>
+                <div class="form-check col">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option4">
+                    <i class="fas fa-train"></i>
+                    <label class="form-check-label" for="exampleRadios2">
+                        Commute
+                    </label>
+                </div>
+                <div class="form-check col">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option5">
+                    <i class="fas fa-coffee"></i>
+                    <label class="form-check-label" for="exampleRadios2">
+                        Beverage
+                    </label>
+                </div>
+                <div class="form-check col">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option6">
+                    <i class="fas fa-tshirt"></i>
+                    <label class="form-check-label" for="exampleRadios2">
+                        Clothing
+                    </label>
+                </div>
+                <div class="form-check col">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option7">
+                    <i class="fas fa-file-medical"></i>
+                    <label class="form-check-label" for="exampleRadios2">
+                        Medical
+                    </label>
+                </div>
+                <div class="form-check col">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option8">
+                    <i class="fas fa-home"></i>
+                    <label class="form-check-label" for="exampleRadios2">
+                        Home
+                    </label>
+                </div>
+                <div class="form-check col">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option9">
+                    <i class="fas fa-bookmark"></i>
+                    <label class="form-check-label" for="exampleRadios2">
+                        Other
+                    </label>
+                </div>
+
+
+            </div>
+        </div>
+        <p style="text-align: center;">Price</p>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Amount" id="price">
+
+        </div>
+        <div>
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </div>
+        <div>
+            <input class="btn btn-primary" type="submit" value="Total">
+        </div>
+        <div class="row row-cols-2">
+
+            <div class="col">
+                <ul class="list-group list-group-flush productName">
+                    <li class="list-group-item">Product</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-group list-group-flush priceAmount">
+                    <li class="list-group-item">Price</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+</script>
+<script src="pocketbook.js"></script>
+
+
+</html>
